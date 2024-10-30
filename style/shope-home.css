@@ -1,0 +1,287 @@
+:root {
+  --putih: #fff;
+  --hitam: #000;
+  --bayangan: rgba(0, 0, 0, 0.75);
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+
+.recomend_container {
+  justify-content: center;
+  align-items: center;
+}
+
+.kata-atas {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+
+.kata-atas a {
+  color: var(--hitam);
+}
+
+.recomend_container a {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.recomend_container p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+}
+
+.card__container {
+  display: flex;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--hitam);
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--hitam);
+}
+
+.recomend-informasi {
+  text-align: center;
+  padding: 4rem 10rem;
+}
+
+.email_other button {
+  padding: 4px 20px;
+  font-size: 1.1rem;
+  margin-top: 1.2rem;
+}
+
+.judul {
+  font-size: 3rem;
+  padding: 1.5rem 0;
+}
+
+.recomend_container {
+  padding-block: 3rem 0;
+  text-align: center;
+}
+
+.lebih-banyak {
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.click-me button {
+  position: relative;
+  padding: 10px 25px;
+  background: var(--putih);
+  color: var(--hitam);
+  border: 1px solid var(--hitam);
+  font-weight: 1000;
+  font-size: 17px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 250ms;
+  z-index: 1;
+  margin-top: 0.5rem;
+}
+
+.click-me button:hover {
+  color: var(--putih);
+}
+
+.card-title-h1 {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin: 1rem;
+}
+
+.properti_container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-box {
+  border: 1px solid var(--hitam);
+  margin: var(--gap-side);
+  padding: 10px;
+  height: 420px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-h1 {
+  font-size: var(--title-font-size);
+}
+
+.card-label {
+  margin: var(--margin-side);
+  row-gap: 2rem;
+  display: flex;
+}
+
+.label-name {
+  background-color: var(--abu);
+  padding: var(--padding-label);
+  border-radius: 20px;
+  margin: 0.1rem;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-img {
+  margin: var(--margin-side);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-button {
+  padding: 0.2rem;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.plus-btn {
+  padding: 5px 6px;
+  place-items: center;
+}
+
+.more-info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.swipper-btn {
+  font-size: 1rem;
+}
+
+/* ==========BREAKPOINT============ */
+
+@media screen and (max-width: 1180px) {
+  .kata-atas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card-box {
+    height: 380px;
+  }
+  .label-name {
+    border-radius: 20px;
+    margin: 0.1rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-box {
+    height: 300px;
+  }
+  .label-name {
+    font-size: 9px;
+  }
+  .recomend-informasi {
+    text-align: center;
+    padding: 4rem 8rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .label-name {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
+
+  .plus-btn {
+    padding: 1px 3px;
+  }
+  .card-box {
+    height: 280px;
+  }
+
+  .recomend_container a {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+  }
+
+  .recomend_container p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+  }
+
+  .recomend-informasi {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-box {
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-box {
+    height: 200px;
+  }
+  .card-h1 {
+    font-size: 9px;
+  }
+
+  .recomend_container p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+  }
+
+  .recomend_container a {
+    font-size: 0.5rem;
+  }
+
+  .label-name {
+    font-size: 5px;
+    padding: 2px 5px;
+  }
+}

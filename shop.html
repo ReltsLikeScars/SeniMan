@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="./style/shope.css" />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/card.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- ================== HEADER =================== -->
+    <header class="header" id="header">
+      <nav class="navbar" id="nav">
+        <div class="nav_menu_icon" id="nav-menu-icon">
+          <i class="ri-menu-2-line"></i>
+        </div>
+
+        <a href="" class="nav_logo"> Seni<span>Man</span> </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <ul class="nav_section">
+            <li class="nav_list">
+              <a href="./home.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./about.html" class="nav_link">About</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./shop.html" class="nav_link">Shop</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./contact.html" class="nav_link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_icon">
+          <div class="nav_else_icon">
+            <i class="ri-moon-line" id="theme-toggle"></i>
+          </div>
+          <a href="./Login.html" class="nav_else_icon">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="./Login.html" class="nav_else_icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- ======================= FILTER ======================= -->
+      <div class="filter_menu" id="filter-menu">
+        <div class="filter_close" id="filter-close">
+          <i class="ri-close-line"></i>
+        </div>
+
+        <div class="filter_span">
+          <span class="filter-title">Filter</span>
+        </div>
+
+        <ul class="filter_list nav__list category-title">
+          <a href="#" class="filter_link nav__link category-title" id="kabeh">
+            <span class="nav__text">Semuanya</span>
+          </a>
+
+          <a
+            href="#"
+            class="filter_link nav__link category-title"
+            id="trending"
+          >
+            <span class="nav__text">trending</span>
+          </a>
+
+          <a href="#" class="filter_link nav__link category-title" id="patung">
+            <span class="nav__text">Patung</span>
+          </a>
+
+          <a
+            href="#"
+            class="filter_link nav__link category-title"
+            id="ekspresi"
+          >
+            <span class="nav__text">Ekspresionisme</span>
+          </a>
+
+          <a href="#" class="filter_link nav__link category-title" id="seni">
+            <span class="nav__text">Seni Akademik</span>
+          </a>
+        </ul>
+      </div>
+
+      <!--======================== PROPERTI ==========================-->
+      <section class="properti section about" id="about">
+        <div class="card-header">
+          <div class=""></div>
+
+          <div class="h1h1h1h1h1">
+            <h1 class="card-title-h1">Jual Karya</h1>
+          </div>
+
+          <div class="filter_bar_icon" id="filter-menu-icon">
+            <i class="ri-grid-fill filterbar__icon"></i>
+          </div>
+        </div>
+
+        <div class="properti_container container grid">
+          <article class="card-box trending kabeh ekspresi">
+            <div class="card-title">
+              <h1 class="card-h1">The Starry Night</h1>
+            </div>
+
+            <div class="card-label">
+              <span class="label-name"> Ekspresionisme </span>
+              <span class="label-name"> Trending </span>
+            </div>
+
+            <img
+              src="image/The Starry Night - Vincent Van Gogh.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Starry Night.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh ekspresi">
+            <div class="card-title">
+              <h1 class="card-h1">The Yellow House</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Ekspresionisme </span>
+              </div>
+            </div>
+
+            <img
+              src="image/The Yellow House - Vincemt Van Gogh.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Starry Night.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn"><i class="ri-add-line"></i></button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh ekspresi">
+            <div class="card-title">
+              <h1 class="card-h1">Starry night over the Rhone</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name">Ekspresionisme</span>
+              </div>
+            </div>
+
+            <img
+              src="./image/Starry night over the Rhone - Vincent Van Gogh.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Starry Night.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh patung">
+            <div class="card-title">
+              <h1 class="card-h1">Madonna of Bruges</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Patung </span>
+              </div>
+            </div>
+
+            <img
+              src="./image/Madonna of Bruges - Michelangelo.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/La Pietà di Michelangelo.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box trending kabeh patung">
+            <div class="card-title">
+              <h1 class="card-h1">La Pietà di Michelangelo</h1>
+            </div>
+
+            <div class="card-label">
+              <span class="label-name"> Patung </span>
+              <span class="label-name"> Trending </span>
+            </div>
+
+            <img
+              src="./image/La Pietà di Michelangelo - Michelangelo.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/La Pietà di Michelangelo.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh patung">
+            <div class="card-title">
+              <h1 class="card-h1">Brutus</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Patung </span>
+              </div>
+            </div>
+
+            <img
+              src="./image/Brutus - Michelangelo.png"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/La Pietà di Michelangelo.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box trending kabeh seni">
+            <div class="card-title">
+              <h1 class="card-h1">The Fallen Angel</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Seni Akademik </span>
+                <span class="label-name"> Trending </span>
+              </div>
+            </div>
+
+            <img
+              src="./image/The Fallen Angel - Alexandre Cabanel.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Fallen Angel.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh seni">
+            <div class="card-title">
+              <h1 class="card-h1">Phaedra</h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Seni Akademik </span>
+              </div>
+            </div>
+
+            <img
+              src="./image/Phaedra - Alexandre Cabanel.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Fallen Angel.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-box kabeh seni">
+            <div class="card-title">
+              <h1 class="card-h1">
+                Cléopâtre essayant des poisons sur des condamnés à mort
+              </h1>
+            </div>
+
+            <div class="card-label">
+              <div class="card-label-info">
+                <span class="label-name"> Seni Akademik </span>
+              </div>
+            </div>
+
+            <img
+              src="./image/Cléopâtre essayant des poisons sur des condamnés à mort - Alexandre Cabanel.jpg"
+              alt=""
+              class="card-img"
+            />
+
+            <div class="card-info">
+              <div class="price-info">$5.000</div>
+
+              <div class="plus-icon">
+                <a href="./Shoping/The Fallen Angel.html">
+                  <button class="plus-btn">
+                    <i class="ri-external-link-line"></i>
+                  </button>
+                </a>
+
+                <a href="" onclick='alert("Fitur Dalam Perkembangan")'>
+                  <button class="plus-btn">
+                    <i class="ri-add-line"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container container grid">
+        <a href="" class="footer_logo"> Seni<span>Man</span> </a>
+
+        <ul class="footer_list">
+          <li>
+            <a href="./home.html" class="footer_link">Home</a>
+          </li>
+          <li>
+            <a href="./about.html" class="footer_link">About</a>
+          </li>
+          <li>
+            <a href="./shop.html" class="footer_link">Shop</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="footer_link">contact</a>
+          </li>
+        </ul>
+        <span class="footer__copy"> &#169; All Rights Reserved By ArreL. </span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="./script/filter.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

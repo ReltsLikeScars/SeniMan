@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Varela&display=swap");
+/*===============  VARIABEL CSS ====================*/
+:root {
+  --hitam: #000;
+  --putih: #fff;
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+/*=====================  ABOUT   ======================*/
+.about_container {
+  padding-top: 2rem;
+}
+
+.about_name {
+  font-size: var(--biggest-font-size);
+  text-align: center;
+  color: var(--hitam);
+}
+
+.about_name span {
+  color: var(--putih);
+  -webkit-text-stroke: 1px var(--hitam);
+}
+
+.about_perfil {
+  position: relative;
+  justify-self: center;
+}
+
+.about_image {
+  width: 220px;
+  border: 5px solid var(--hitam);
+}
+
+.about_img {
+  position: relative;
+  z-index: 10;
+  margin: 2rem 0;
+}
+
+.about_info {
+  margin-top: 2rem;
+}
+
+.about_description {
+  text-align: center;
+  color: var(--hitam);
+  margin-bottom: 1.5rem;
+}
+
+/*======================= BACKGORUND  ======================*/
+.background_container {
+  padding-top: 2rem;
+}
+
+.background_name {
+  font-size: var(--biggest-font-size);
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.background_perfil {
+  position: relative;
+  justify-self: center;
+}
+
+.background_image {
+  width: 220px;
+  border: 5px solid black;
+}
+
+.background_img {
+  position: relative;
+  z-index: 10;
+  margin: 2rem 0;
+}
+
+.background_info {
+  margin-top: 2rem;
+}
+
+.background_description {
+  text-align: center;
+  color: var(--hitam);
+  margin-bottom: 1.5rem;
+}
+
+/* ======================= BOX ============================ */
+.benefit_title-h2 {
+  text-align: center;
+  font-size: var(--biggest-font-size);
+}
+
+.benefit_container {
+  grid-template-columns: 250px;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.benefit_card {
+  position: relative;
+}
+
+.benefit_content {
+  height: 100%;
+  background-color: var(--putih);
+  border: 4px solid var(--hitam);
+  padding: 3rem 1rem;
+  position: relative;
+  text-align: center;
+  transform: background-color 0.4s, border 4s;
+}
+
+.benefit_icon {
+  position: relative;
+  display: inline-block;
+}
+
+.benefit_icon i {
+  font-size: 2rem;
+  color: var(--hitam);
+  position: relative;
+}
+
+.benefit_title {
+  margin: 1rem 0;
+}
+
+/* ======================= INFORMATION ======================= */
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.email_container {
+  margin: 0 4rem;
+}
+
+.email_information,
+.email_other {
+  text-align: center;
+  margin: 2rem 7rem;
+}
+
+.email_other {
+  margin-top: 2rem;
+}
+
+.email_paragraph,
+.email_addres {
+  margin: 0.5rem 7rem;
+}
+
+/*====================  BREAKPOINT =======================*/
+
+@media screen and (max-width: 378px) {
+  .background_name {
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .email {
+    padding: 0 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .about_container,
+  .background_container {
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .background_name {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefit_container {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .about_container,
+  .background_container {
+    grid-template-columns: repeat(2, 460px);
+    gap: 2rem 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .about_perfil {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin-top: 0.5rem;
+  }
+
+  .background_perfil {
+    grid-column: 0 / 3;
+    grid-row: 1 / 3;
+    margin-top: 0.5rem;
+  }
+
+  .about_image,
+  .background_image {
+    width: 350px;
+  }
+
+  .about_name,
+  .about_description,
+  .background_name,
+  .background_description {
+    text-align: initial;
+  }
+
+  .about_name {
+    align-self: flex-end;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+  }
+
+  .background_name {
+    margin-left: 2.5rem;
+    font-size: 3.5rem;
+    margin-top: 4rem;
+  }
+
+  .about_info,
+  .background_info {
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+
+  .about_description,
+  .background_description {
+    position: relative;
+    font-size: var(--h2-font-size);
+    margin-bottom: 5.5rem;
+    padding-left: 3rem;
+  }
+
+  .about_description::after,
+  .background_description::after {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: var(--hitam);
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+
+  .benefit_container {
+    grid-template-columns: repeat(3, 282px);
+    column-gap: 5rem;
+    padding-block: 3rem 5rem;
+  }
+}

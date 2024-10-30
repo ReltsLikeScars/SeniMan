@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <!-- ===================== HEADER ==================== -->
+    <header class="header" id="header">
+      <nav class="navbar" id="nav">
+        <div class="nav_menu_icon" id="nav-menu-icon">
+          <i class="ri-menu-2-line"></i>
+        </div>
+
+        <a href="" class="nav_logo"> Seni<span>Man</span> </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <ul class="nav_section">
+            <li class="nav_list">
+              <a href="./home.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./about.html" class="nav_link">About</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./shop.html" class="nav_link">Shop</a>
+            </li>
+
+            <li class="nav_list">
+              <a href="./contact.html" class="nav_link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_icon">
+          <div class="nav_else_icon">
+            <i class="ri-moon-line" id="theme-toggle"></i>
+          </div>
+          <a href="./Login.html" class="nav_else_icon">
+            <i class="ri-user-line"></i> 
+          </a>
+          <a href="./Login.html" class="nav_else_icon">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====================== Contact ========================= -->
+    <section class="contact section">
+      <div class="contact_container grid">
+        <div class="contact_info">
+          <h3 class="contact_title">Contact</h3>
+          <p class="contact_text">
+            Hubungi kami untuk segala kebutuhan dan pertanyaan Anda. 
+            Kami siap membantu melalui berbagai saluran komunikasi yang nyaman untuk Anda
+          </p>
+
+          <div class="contact_other-info">
+            <div class="contact_information">
+              <i class="ri-map-2-line"></i>
+              <p>Jl. Pandanaran 2 NO. 12, Mugassari, Kec. Semarang Selatan, Kota Semarang, 50249</p>
+            </div>
+
+            <div class="contact_information">
+              <i class="ri-mail-line"></i>
+              <p>lorem@ipsum.com</p>
+            </div>
+
+            <div class="contact_information">
+              <i class="ri-phone-line"></i>
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="contact_social">
+            <p>Connect with Me :</p>
+            <div class="contact_social-icon">
+              <a href="#">
+                <i class="ri-facebook-fill"></i>
+              </a>
+
+              <a href="#">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+
+              <a href="#">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_form">
+          <form autocomplete="off">
+            <h3 class="contact_title">Contact me</h3>
+
+            <div class="contact_input">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+
+            <div class="contact_input">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+
+            <div class="contact_input">
+              <input type="text" name="text" class="input" />
+              <label for="">Subject</label>
+              <span>Subject</span>
+            </div>
+
+            <div class="contact_input textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+
+            <div class="contact_button">
+              <button onclick='alert("Fitur Dalam Perkembangan")'>Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= FOOTER ========================= -->
+    <footer class="footer">
+      <div class="footer_container section grid">
+        <a href="" class="footer_logo"> Seni<span>Man</span> </a>
+
+        <ul class="footer_list">
+          <li>
+            <a href="./home.html" class="footer_link">Home</a>
+          </li>
+          <li>
+            <a href="./about.html" class="footer_link">About</a>
+          </li>
+          <li>
+            <a href="./shop.html" class="footer_link">Shop</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="footer_link">contact</a>
+          </li>
+        </ul>
+        <span class="footer__copy"> &#169; All Rights Reserved By ArreL.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

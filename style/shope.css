@@ -1,0 +1,106 @@
+:root {
+  --putih: #fff;
+  --hitam: #000;
+  --bayangan: rgba(0, 0, 0, 0.75);
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+.filter_menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: var(--putih);
+  box-shadow: 0 0 5px var(--hitam);
+  height: 100%;
+  padding: 3rem 3rem 0 2rem;
+  transition: left 0.4s;
+  z-index: 100;
+}
+
+.filter_span {
+  margin-top: 3.5rem;
+}
+
+.filter_title {
+  text-align: center;
+  position: relative;
+  width: max-content;
+  margin: 1rem 4rem;
+  font-size: var(--h2-font-size);
+}
+
+.filter_title::after,
+.filter_title::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: var(--hitam);
+  position: absolute;
+  top: 50%;
+  left: -4rem;
+}
+
+.filter_title::before {
+  left: initial;
+  right: -4rem;
+}
+
+.filter_list {
+  display: grid;
+  row-gap: 2rem;
+  margin-top: 2rem;
+}
+
+.filter_link {
+  position: relative;
+  transition: color 0.3s;
+  color: var(--hitam);
+  font-size: var(--h3-font-size);
+}
+
+.filter_link:hover {
+  color: transparent;
+  -webkit-text-stroke: 0.5px var(--hitam);
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.filter_menu {
+  padding: 3rem 5rem 0 2.5rem;
+}
+
+.filter_close,
+.filter_bar_icon {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.filter_close {
+  top: 1rem;
+}
+
+@media screen and (max-width: 426px) {
+  .filter_close,
+  .filter_bar_icon {
+    font-size: 1.5rem;
+  }
+}

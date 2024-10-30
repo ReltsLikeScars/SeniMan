@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/login.css" />
+    <title>login</title>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Daftar</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-apple"></i></a>
+            <a href="#" class="icon"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button onclick='alert("Sedang dalam pengembangan")'>Daftar</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Masuk</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-apple"></i></a>
+            <a href="#" class="icon"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <h5>Atau masukan Email</h5>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <span><a href="#">Lupa Pasword?</a></span>
+          <button onclick='alert("Sedang dalam pengembangan")'>Masuk</button>
+          <span class="Kembali">
+            <a href="home.html">Kembali</a>
+        </span>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Masuk</h1>
+            <p>Masukkan data pribadi anda <j>menggunakan semua fitur</j></p>
+            <button class="hidden" id="login">Masuk</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Daftar</h1>
+            <p>
+              Daftarkan data pribadi Anda <j>untuk menggunakan semua fitur</j>
+            </p>
+            <button class="hidden" id="register">Daftar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/login.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

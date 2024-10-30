@@ -1,0 +1,144 @@
+:root {
+  --putih: #fff;
+  --hitam: #000;
+  --bayangan: rgba(0, 0, 0, 0.75);
+
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  --title-font-size: 0.75rem;
+  --padding-label: 5px 9px;
+  --gap-side: 5px;
+  --margin-side: 10px 0;
+}
+
+@media screen and (min-width: 765px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+
+    --title-font-size: 1.25rem;
+    --padding-label: 5px 14px;
+    --gap-side: 10px 20px;
+    --margin-side: 20px 0;
+  }
+}
+.card-title-h1 {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin: 1rem;
+}
+
+.properti_container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-box {
+  border: 1px solid var(--hitam);
+  margin: var(--gap-side);
+  padding: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card-h1 {
+  font-size: var(--title-font-size);
+}
+
+.card-label {
+  margin: var(--margin-side);
+  row-gap: 2rem;
+  display: flex;
+}
+
+.label-name {
+  background-color: var(--abu);
+  padding: var(--padding-label);
+  color: white;
+  border-radius: 20px;
+  margin: 0.1rem;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-img {
+  margin: var(--margin-side);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.price-info {
+  color: var(--hitam);
+}
+
+.card-button {
+  padding: 0.2rem;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.plus-btn {
+  padding: 5px 6px;
+  place-items: center;
+}
+
+.more-info-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    margin-inline: 0;
+  }
+
+  .card-box {
+    margin-bottom: var(--gap-side);
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  .price-info,
+  .label-name {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card-box {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .properti_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card-header{
+    padding: 2rem 4rem;
+  }
+}
